@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | The Striped Umbrella</title>
+    <!--icon-->
+    <link rel="icon" href="./assets/images/beach-umbrella-icon.jpg" type="image/jpg">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <a href="about.html"><img src="./assets/images/su_banner.gif" alt="Banner"></a>
+
+            <nav id="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="about.html">About Us</a></li>
+                    <li class="nav-item"><a href="services.html">Our Services</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Main Contact Page Content-->
+        <main class="contact">
+            <h2>Contact Us!</h2>
+
+            <!--Contact Form-->
+            <form action="#" method="post">
+
+                <!--Personal Information-->
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="first-name">First Name:* </label>
+                    <input type="text" id="first-name" name="first-name" required maxlength="25"><br><br>
+
+                    <label for="last-name">Last Name:* </label>
+                    <input type="text" name="last-name" id="last-name" required maxlength="25"><br><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required maxlength="35"><br><br>
+
+                    <p>Please select the music genre(s) that you like:</p>
+                    <input type="checkbox" name="genre" value="Classic">Classic<br>
+                    <input type="checkbox" name="genre" value="Jazz">Jazz<br>
+                    <input type="checkbox" name="genre" value="Blues">Blues<br>
+                    <input type="checkbox" name="genre" value="Instrumental">Instrumental
+                </fieldset>
+
+                <br>
+
+                <!--Your Message-->
+                <fieldset>
+                    <legend>Your Message</legend>
+
+                    <label for="hear">How did you hear about us?</label>
+                    <select name="hear" id="hear">
+                        <option value="website">Our Website</option>
+                        <option value="friend">Friend</option>
+                        <option value="tv">TV Ad</option>
+                        <option value="other">Other</option><br><br>
+                    </select>
+
+                    <p>Would you recommend us to friends?</p>
+                        <input type="radio" id="yes" name="recommend" value="Yes"> Yes
+                        <input type="radio" id="no" name="recommend" value="No"> No
+                        <input type="radio" id="maybe" name="recommend" value="Maybe"> Maybe<br><br>
+                    
+                    <label for="request">Your Request</label><br>
+                    <textarea name="request" id="request" rows="4" cols="40"></textarea><br><br>
+
+                    <input type="checkbox" name="updates" id="updates">
+                    <label for="updates">Sign me up for email updates</label><br><br>
+
+                    <input type="submit" value="Submit">
+
+                </fieldset>
+            </form>
+
+            <br>
+
+            <!--Location - Google Maps-->
+            <h3>Our Location</h3>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.8659961202934!2d-79.3897605!3d43.6717567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2e0b64e1140d%3A0xd11156503e310196!2sSpa%20at%20Four%20Seasons%20Toronto!5e0!3m2!1sen!2sca!4v1758937626581!5m2!1sen!2sca" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+           </iframe>
+            
+        </main>
+
+
+        <footer>
+             <p id="copyright">&copy;2025 ILAC and EFREI Paris – HTML-CSS major lab-work - 
+                created by: Julia Marques Batista - All rights reserved</p>
+        </footer>
+
+
+    </div>
+    
+</body>
+</html>
